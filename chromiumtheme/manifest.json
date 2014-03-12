@@ -1,0 +1,26 @@
+ {
+  "manifest_version": 2,
+  "version": "0.1",
+  "name": "Awesome theme",
+  "theme": {
+  "images" : {
+      "theme_frame" : "images/theme_frame.png",
+      "theme_toolbar" : "images/theme_toolbar.png",
+      "theme_tab_background" : "images/theme_tab_background.png"
+    },
+    "colors" : {
+      "frame" : [ 83, 93, 108 ],
+      "frame_inactive" : [ 34, 34, 34 ],
+      "toolbar" : [ 223, 223, 223 ],
+      "ntp_header" : [ 123, 123, 123 ],
+      "ntp_section" : [ 214, 214, 214 ],
+      "tab_text" : [ 0, 0, 0 ],
+      "tab_background_text" : [ 38, 38, 38 ],
+      "bookmark_text" : [ 31, 31, 31 ]
+    },
+    "tints": {
+       "frame_inactive": [ 0, 0, 0.185 ]
+    }
+
+  }
+}
