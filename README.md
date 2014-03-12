@@ -4,7 +4,7 @@ This is my configuration for the [awesome window manager](http://awesome.naquada
 
 Highlights:
 
-* Custom set of widgets, note that some require [Vicious](http://git.sysphere.org/vicious).
+* Custom set of widgets, note that some require [Vicious](http://git.sysphere.org/vicious/).
 * Optimized for Dvorak keyboard.
 * Random wallpaper rotator.
 * Includes a matching Chromium theme.
