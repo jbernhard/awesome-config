@@ -567,9 +567,7 @@ awful.rules.rules = {
     { rule_any = { 
         class = { "MPlayer", "mplayer2", "Gimp", "Plugin-container", "feh", "Google-musicmanager", "Tk", "mpv" }, 
         instance = { "exe" },
-        role = { "GtkFileChooserDialog" } },
-      properties = { floating = true } },
-    { rule = { class = "Chromium", role = "pop-up" },
+        role = { "GtkFileChooserDialog", "pop-up" } },
       properties = { floating = true } },
     -- apps that run on specific tags
     { rule = { class = "Chromium", role = "browser" },
