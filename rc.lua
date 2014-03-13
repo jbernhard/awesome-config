@@ -398,8 +398,6 @@ globalkeys = awful.util.table.join(
 
   -- applications
   awful.key({ modkey,           }, "c", function () awful.util.spawn("chromium") end),
-  awful.key({ modkey,           }, "n", function () awful.util.spawn("konqueror") end),
-  awful.key({ modkey,           }, "g", function () awful.util.spawn("gvim") end),
   awful.key({ modkey,           }, "p", function () awful.util.spawn("ipython qtconsole") end),
   
   -- print screen
