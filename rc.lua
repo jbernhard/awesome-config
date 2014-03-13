@@ -85,24 +85,6 @@ editor_cmd = terminal .. " -e " .. editor
 -- However, you can use another modifier like Mod1, but it may interact with others.
 modkey = "Mod4"
 
--- Table of layouts to cover with awful.layout.inc, order matters.
-local layouts =
-{
-  awful.layout.suit.tile.left, --1
-  awful.layout.suit.max, --2
-  awful.layout.suit.tile, --3
-  awful.layout.suit.tile.bottom, --4
-  awful.layout.suit.tile.top, --5
-  awful.layout.suit.floating, --6
-  awful.layout.suit.fair, --7
-  awful.layout.suit.fair.horizontal, --8
-  awful.layout.suit.spiral, --9
-  awful.layout.suit.spiral.dwindle, --10
-  awful.layout.suit.max.fullscreen, --11
-  awful.layout.suit.magnifier --12
-}
--- }}}
-
 -- {{{ Random wallpaper
 if resolution then
   function imglist(path)
@@ -141,17 +123,32 @@ if resolution then
 end
 -- }}}
 
+-- Table of layouts to cover with awful.layout.inc, order matters.
+local layouts =
+{
+  awful.layout.suit.tile, --1
+  awful.layout.suit.tile.left, --2
+  awful.layout.suit.max, --3
+  awful.layout.suit.floating --4
+  --awful.layout.suit.tile.bottom,
+  --awful.layout.suit.tile.top,
+  --awful.layout.suit.fair,
+  --awful.layout.suit.fair.horizontal,
+  --awful.layout.suit.spiral,
+  --awful.layout.suit.spiral.dwindle,
+  --awful.layout.suit.max.fullscreen,
+  --awful.layout.suit.magnifier
+}
+-- }}}
+
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {
-  names = { "1", "2", "3", "'", ",", ".", "a", "o", "e" },
-  layouts = { layouts[1], layouts[1], layouts[1],
-              layouts[1], layouts[2], layouts[1],
-              layouts[1], layouts[1], layouts[1] }
+  names = { "1", "2", "3", "'", ",", ".", "a", "o", "e" }
 }
 for s = 1, screen.count() do
   -- Each screen has its own tag table.
- tags[s] = awful.tag(tags.names, s, tags.layouts)
+  tags[s] = awful.tag(tags.names, s, layouts[1])
 end
 -- }}}
 
