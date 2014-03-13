@@ -569,15 +569,22 @@ awful.rules.rules = {
         instance = { "exe" },
         role = { "GtkFileChooserDialog", "pop-up" } },
       properties = { floating = true } },
+    -- fix gaps at screen edges
+    { rule_any = {
+      class = { "URxvt", "Gvim" } },
+      properties = { size_hints_honor = false } }
+
+    --{ rule = { class = "Chromium", role = "pop-up" },
+    --  properties = { floating = true } },
     -- apps that run on specific tags
-    { rule = { class = "Chromium", role = "browser" },
-      properties = { tag = tags[1][1], switchtotag = false } },
-    { rule = { class = "URxvt" },
-      properties = { tag = tags[1][2], switchtotag = false, size_hints_honor = false } },
-    { rule = { class = "Gvim" },
-      properties = { tag = tags[1][5], switchtotag = false, size_hints_honor = false } },
-    { rule = { class = "Amarok" },
-      properties = { tag = tags[1][7], switchtotag = false } }
+    --{ rule = { class = "Chromium", role = "browser" },
+    --  properties = { tag = tags[1][1], switchtotag = false } },
+    --{ rule = { class = "URxvt" },
+    --  properties = { tag = tags[1][2], switchtotag = false, size_hints_honor = false } },
+    --{ rule = { class = "Gvim" },
+    --  properties = { tag = tags[1][5], switchtotag = false, size_hints_honor = false } },
+    --{ rule = { class = "Amarok" },
+    --  properties = { tag = tags[1][7], switchtotag = false } }
 }
 -- }}}
 
