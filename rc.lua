@@ -128,11 +128,11 @@ local layouts =
 {
   awful.layout.suit.tile, --1
   awful.layout.suit.tile.left, --2
-  awful.layout.suit.max, --3
-  awful.layout.suit.floating --4
+  awful.layout.suit.fair, --3
+  awful.layout.suit.max, --4
+  awful.layout.suit.floating --5
   --awful.layout.suit.tile.bottom,
   --awful.layout.suit.tile.top,
-  --awful.layout.suit.fair,
   --awful.layout.suit.fair.horizontal,
   --awful.layout.suit.spiral,
   --awful.layout.suit.spiral.dwindle,
