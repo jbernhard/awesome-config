@@ -435,9 +435,9 @@ elseif ice9 then
         fg = n > 50 and '#000000' or '#ffffff',
         bg = '#'..grey..grey..grey,
         height = 24,
-        width = 26,
+        width = 34,
         font = 'Deja Vu Sans Mono 10',
-        title = string.format('%02d',state),
+        title = string.format('%03d',state),
         timeout = 1
       }
 
