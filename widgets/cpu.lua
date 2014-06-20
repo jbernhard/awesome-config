@@ -34,7 +34,7 @@ for i = 2,1+awful.util.pread("awk '/cpu cores/ {print $4}' /proc/cpuinfo | uniq"
   vicious.register(w, vicious.widgets.thermal, 
     function (widget, args)
       return '<span color ="'..gradient(cputempmin, cputempmax, args[1])..'">'..args[1]..'</span>'
-    end, 5, {'coretemp.0', 'core', 'temp'..i..'_input'})
+    end, 5, {'coretemp.0/hwmon/hwmon1', 'core', 'temp'..i..'_input'})
 
     table.insert(cpu.temp, w)
 end
